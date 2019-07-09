@@ -1,0 +1,8 @@
+@media only screen and (max-width: 900px) {
+	#group-sittings td:nth-child(1) { background-color: hsla(212, 57%, 79%, 1) ; }
+}
+
+@media only screen and (max-width: 600px) {
+	.header-nav-menu ul ul ul a { background-color: hsla(143, 32%, 92%, 1)}
+	.header-nav-menu ul ul ul ul a { background-color: hsla(150, 27%, 96%, 1)}
+}

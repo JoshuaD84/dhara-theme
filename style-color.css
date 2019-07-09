@@ -1,0 +1,77 @@
+* { color: inherit }
+
+html,body { background: hsla(213, 60%, 94%, 1); }
+#page-content-matting { background: hsla(213, 60%, 94%, 1); }
+.page-content { background-color: hsla(210, 33%, 99%, 1) }
+.page-content {  border-color: hsla(154, 27%, 76%, 1); color: hsla(240, 14%, 23%, 1) !important }
+#header-titles { background-color: hsla(212, 59%, 66%, 1); }
+
+#header-titles, #header-site-name-link { color: hsla(214, 60%, 10%, 1); }
+#header-site-name-link:hover { color: hsla(214, 74%, 23%, 1)}
+#header-image { border-color:hsla(212, 59%, 28%, 1) }
+
+.header-nav-menu > ul > li > a, #nav-color, .header-nav-menu { background: linear-gradient(hsla(155, 27%, 84%, 1),hsla(155, 27%, 71%, 1)); }
+.header-nav-menu > ul > li:hover > a { background: initial; background-color:hsla(146, 33%, 88%, 1) }
+
+.header-nav-menu > ul > li > a:hover { background-color:hsla(152, 63%, 95%, 1) }
+.header-nav-menu ul ul a:hover {  background-color:hsla(152, 63%, 95%, 1);}
+.header-nav-menu ul ul a { background-color: hsla(146, 33%, 88%, 1); border-color: hsla(146, 30%, 57%, 1) }
+.header-nav-menu ul ul li:first-child { border-top-color: hsla(146, 30%, 57%, 1) }
+.header-nav-menu, .header-nav-menu > ul > li, .header-nav-menu a, 
+.header-nav-menu > ul > li:first-child, #mobile-menu > li > a
+	{ background-color: hsla(154, 27%, 76%, 1); color: hsla(154, 91%, 9%, 1); border-color: hsla(146, 30%, 57%, 1);}
+
+.header-nav-menu > ul > .current_page_ancestor > a, 
+.header-nav-menu > ul > .current_page_ancestor > a:hover,
+.header-nav-menu > ul > .current_page_ancestor:hover > a
+	{ background: initial; background-color: hsla(212, 59%, 41%, 1) !important; color: hsla(0, 100%, 100%, 1) }
+
+#page-footer { background-color: hsla(214, 59%, 82%, 1) }
+#page-footer { color: hsla(240, 14%, 23%, 1) }
+#page-footer a:hover { color: hsla(240, 14%, 45%, 1) }
+#footer-copyright-and-sitemap { background-color: hsla(212, 59%, 74%, 1); }
+
+#mobile-search, #mobile-login, #mobile-menu .active-mobile-menu  { background-color:hsla(146, 33%, 88%, 1) }
+	 
+#searchsubmit, #wp-submit { border-color: hsla(146, 30%, 57%, 1);  background: hsla(0, 0%, 87%, 1);}
+#s, #user_login, #user_pass { border-color: hsla(146, 30%, 57%, 1) }
+#s:hover, #user_login:hover, #user_pass:hover , #searchsubmit:hover, #wp-submit:hover 
+	{ border-color: hsla(23, 86%, 64%, 1); }
+	
+/*General Page Content*/
+#content-title, #content-title a { color: hsla(214, 60%, 10%, 1);} 
+.page-content { color: hsla(215, 61%, 13%, 1) }
+.page-content h1 { color: hsla(214, 73%, 23%, 1) }
+.page-content h2 { color: hsla(214, 72%, 32%, 1) }
+.page-content h3 { color: hsla(214, 72%, 13%, 1) }
+.page-content a:link, .page-content a:visited { color: hsla(214, 49%, 40%, 1); }
+.page-content a:hover { color: hsla(214, 87%, 63%, 1); }	
+.page-content blockquote {	background-color: hsla(213, 84%, 93%, 1); border-color: hsla(214, 79%, 89%, 1) } 
+.page-content blockquote:hover { background-color:hsla(213, 85%, 95%, 1) }
+
+#front-page-table tr:nth-child(odd) { background-color: initial }
+
+.wp-caption { border-color: hsla(209, 55%, 75%, 1); background-color:hsla(214, 70%, 94%, 1) } 
+.wp-caption:hover { background-color:hsla(214, 100%, 96%, 1) }
+
+/*Tables*/
+.page-content th, .meeting-minutes header, .trust-list header {  background-color: hsla(212, 57%, 79%, 1); }
+.page-content tr, .page-content tc, .page-content th, .page-content td,
+.page-content table, .meeting-minutes header, .trust-list header
+	{ border-color: hsla(212, 59%, 59%, 1); }
+	
+.page-content tr:nth-child(odd) {	background-color: hsla(214, 57%, 95%, 1) }
+.page-content #organizational-structure tr:nth-child(odd) { background-color: transparent; }
+
+/*Fixing content we glob from www.dhamma.org*/
+.www-pageSetup, .www-pageSetup *, .www-pageSetup tr:nth-child(odd) , .pageSetup, .pageSetup *, .pageSetup tr:nth-child(odd)
+	{ background-color: transparent; }
+	
+.post-metadata-table, .post-metadata-table * { background-color: transparent !important }
+
+article.archive:hover { background-color: hsla(214, 57%, 95%, 1) }
+
+li.search-results:hover { background-color: hsla(214, 57%, 95%, 1) }
+a.search-results:link, a.search-results:visited { color: hsla(240, 14%, 23%, 1) }/*Same as page content color*/
+.page-numbers:hover { background-color: hsla(214, 57%, 95%, 1) }
+

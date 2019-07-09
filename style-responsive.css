@@ -1,0 +1,223 @@
+/* we put this in a @media tag, so non-responsive browers only see the static-width directives in style.css*/
+@media only screen and (min-width: 5px ) { .constrained-to-mid { width: 85%; min-width: 280px; } } 
+
+/* First we deal with the width of the matting around the page content */
+@media only screen and (max-width: 1400px) { .constrained-to-mid { width: 90% } }
+@media only screen and (max-width: 1300px) { .constrained-to-mid { width: 95% } }
+@media only screen and (max-width: 1200px) { 
+   .constrained-to-mid { width: 100% }
+   #header-titles, #search-login-bar { box-sizing: border-box; padding-left: 10px; padding-right: 10px; }
+}
+
+/* Now we deal with the front page */
+@media only screen and (max-width: 800px) { 
+   #front-page-table td { padding-left: 10px; padding-right: 10px }
+}
+
+@media only screen and (max-width: 600px) { 
+   #front-page-table { margin-top: 15px; }
+   .primary-menu-image { width: 80px; height: 80px; }
+   #front-page-table ul { list-style: none } 
+   ul.old-student-home-list li { overflow: initial }
+
+   #front-page-table table, #front-page-table tr, #front-page-table td
+      { display: block; border-radius: 15px; width: auto }
+
+   .front-page-section-image { border-radius: 5px; border-width: 2px; }
+   #front-page-section td { margin: 0px; padding: 4px; float: left; width: 30%; }
+
+   .front-page-icon { width: 38px; height: 38px; border-width: 3px; }
+   #front-page-icon-row h3 { font-size: .85em }
+}
+
+/* Deal with menu height for short screens */
+@media only screen and (min-width: 601px) and (max-height: 550px) {
+   .header-nav-menu ul ul a { padding-top: 5px; padding-bottom: 5px; }
+}
+
+/* Now we deal with the nav menu width */
+@media only screen and (min-width: 601px) and (max-width: 1050px) {
+	.header-nav-menu > ul > li > a { padding-left: 10px; padding-right: 10px; } 
+}
+
+@media only screen and (min-width: 601px) and (max-width: 930px) {
+   /* TODO: Fix these up to get good menus */
+	.header-nav-menu a { font-size: .85em } 
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+   .header-nav-menu > ul > li > a { height: 32px }
+}
+
+/* Top login / search / schedule bar */
+@media only screen and (max-width: 750px) {
+   #search-login-bar #topbarsearchbox { width: 120px }
+   #search-login-bar #schedule-cell { padding-left: 5px }
+}
+
+
+/* Now we deal with the header text and image */
+@media only screen and (max-width: 1100px) {
+   #header-site-name { font-size: 2.8em; }
+   #header-site-description { font-size: 1.8em; }
+   #header-image { height: 100px; }
+}
+
+@media only screen and (max-width: 930px) {
+   #header-site-description { font-size: 1.5em; }
+}
+
+@media only screen and (max-width: 860px) {
+	#header-site-name { font-size: 2.4em; }
+   #header-image { height: 90px; }
+}
+
+@media only screen and (max-width: 860px) {
+	#header-site-description { font-size: 1.3em; }
+}
+
+@media only screen and (max-width: 750px) {
+	#header-site-name { font-size: 2.0em; }
+	#header-site-description { font-size: 1.1em; }
+    #header-image { height: 80px; }
+}
+
+@media only screen and (max-width: 650px) {
+	#header-site-name { font-size: 2.0em; margin-top: 15px }
+	#header-site-description { font-size: 1.5em; }
+    #header-site-location { font-size: 2em; }    
+    #header-image { display: none }
+    #search-login-bar #login-form-cell { font-size: .9em }
+}
+
+@media only screen and (max-width: 430px) {
+	#header-site-name { font-size: 1.8em; margin-top: 10px }
+	#header-site-description { font-size: 1.3em; }
+    #header-site-location { font-size: 2em; }    
+}
+
+/* Footer */
+@media only screen and (max-width: 860px) {
+   #page-footer { font-size: 1.3em }
+   #page-footer h2 { font-size: 1.4em }
+}
+
+/* Primary Trail - The prev and next links at the bottom of a few primary new student pages */
+
+@media only screen and (max-width: 1200px) {
+   .primary-trail-link { font-size: 1.2em; }
+}
+
+@media only screen and (max-width: 855px) {
+   .primary-trail-link { font-size: 1em; }
+}
+
+/* Trustee List */
+@media only screen and (max-width: 800px) { .trust-list { width: 49%; } }
+
+/* What to bring / what not to bring tables */
+@media only screen and (max-width: 850px) {
+   #what-to-bring, #what-not-to-bring, #what-to-bring-row, #what-to-bring-table { display: block; width: 100%}
+   #what-to-bring { margin-bottom: 10px; }
+}
+
+/* Manage tables at low widths - Stack each td vertically instead of in rows */
+@media only screen and (max-width: 900px) {
+	table#group-sittings , #group-sittings thead, #group-sittings tbody, 
+	#group-sittings th, #group-sittings td, #group-sittings tr:not(.table-fix-dummy)
+      { display: block; box-sizing: border-box }
+
+    #group-sittings td { width: 100% !important; text-align: center }
+    
+    table#recipes, #recipes td, #recipes tbody, #recipes thead, #recipes tr 
+      { display: block; box-sizing: border-box; width: 100% !important; text-align: center }
+
+	table.organizational-structure, .organizational-structure thead, .organizational-structure tbody, 
+	.organizational-structure th, .organizational-structure td, .organizational-structure  tr,
+	table#trust-committees-table #trust-committees-table thead, #trust-committees-table tbody, 
+	#trust-committees-table th, #trust-committees-table td, #trust-committees-table  tr,
+	table.email-list, .email-list thead, .email-list tbody, 
+	.email-list th, .email-list td, .email-list  tr, 
+	table#announce-email-list #announce-email-list thead, #announce-email-list tbody, 
+	#announce-email-list th, #announce-email-list td, #announce-email-list  tr
+		{ display: block; box-sizing: border-box }/*If you add any to this list, please include it in style-ie9.css as well*/
+
+   #announce-email-list thead { display: none }
+   #announce-email-list td:nth-child(1) { text-align: center; font-weight: bold }
+   #announce-email-list td { border: none }
+   #announce-email-list td:nth-child(2):before { content: "Email list: " }
+	table#trust-committees-table #trust-committees-table thead, #trust-committees-table tbody, 
+	#trust-committees-table th, #trust-committees-table td
+      { border-width: 0px }
+
+   .page-content table.organizational-structure td { width: 100%; }
+	.email-list td:first-child { border-bottom: none !important; text-align: center; font-weight: bold}
+	.email-list td:nth-child(2) { border-top: none !important; text-align: center}
+	#group-sittings th { display: none }
+	#group-sittings td:nth-child(1) { text-align: center; font-weight: bold}
+
+	.phone-list, .email-list, .finance-table, .child-teen-schedule  { width: 100%; min-width: 100%}
+
+   /*I'm not sure what this is hitting; maybe nothing now that the nyc and boston site stuff is gone? */	
+	embed { width: 300px !important; height: 225px !important } 
+}
+
+/* Now we deal with the mobile site */
+@media only screen and (max-width: 600px) {
+   #search-login-bar { display: none } 
+   #mobile-menu { width: 100%; list-style: none; display: block; overflow: hidden; }
+	#mobile-menu li { width:25%; float:left; }
+	#mobile-menu a { display:block; text-align: center; height: 66px; line-height: 66px; font-size: 1.4em; font-weight: bold; }
+   #mobile-login-forgot-info { font-size: 1.4em; margin-bottom: 15px }
+   #mobile-login-forgot-info a { text-decoration: underline; }
+
+	#mobile-menu img { vertical-align: top; height: 24px; padding-bottom: 4px; }
+	#mobile-menu span { display:inline-block; vertical-align: middle; line-height:14px; }
+   .header-nav-menu > ul > li > a { background: initial !important; background-color: hsla(154, 27%, 76%, 1); border-bottom: 1px solid hsla( 154, 27%, 50%, 1); }
+   .header-nav-menu > ul ul a { border-top: 0px; border-left: 0px; border-right: 0px; }
+
+   .logged-in-menu { height: initial; }
+   .header-nav-menu > .nav li:hover > ul { display: none; } /* We first have to reset the hover behavior from normal menu */
+   .nav { width: 100% }
+	.nav ul { position: initial !important; } 
+   .header-nav-menu ul ul { padding-left: 15px !important }
+	.header-nav-menu li { display: block !important; } 
+	.nav { zoom:1; }
+   .header-nav-menu > .nav li.show-sub-menu > ul { display:block !important; height:auto !important; }
+   .header-nav-menu ul { background: none; }
+   .header-nav-menu ul .menu-item-has-children > a {
+      background-image:url('/wp-content/themes/dhara/images/submenu-arrow-green.png') !important;
+      background-position: center right 8px !important; 
+      background-repeat: no-repeat !important; 
+      padding-right: 30px !important; 
+   }
+
+	.header-nav-menu a { 
+      display: block !important;
+      text-align: left !important;
+      vertical-align: middle !important;
+      font-size: 1em !important; 
+      height: initial !important;
+      margin: 0px !important;
+      padding: 15px 15px !important; 
+   }
+
+   .header-nav-menu > ul > li:first-child { border-left: 0px solid; }
+   .header-nav-menu ul ul > li:first-child { border-top: 0px solid; }
+
+	#mobile-search { padding: 5%; text-align: center}
+	#mobile-search #s { width: 70%; display: inline }
+	#mobile-search #searchsubmit {  width: 20%; display: inline }
+	
+	#mobile-login { padding: 10px; text-align: center; }
+
+   ul.old-student-home-list li { margin-bottom: 5px; white-space: normal; text-overflow: initial; overflow: initial }
+
+	.page-content { width: 100%; padding: 10px; max-width: 100% }	
+	.page-content h1 { font-size: 1.4em; line-height: 1.1em; margin: 10px 0px 10px; text-align: center }
+	.page-content { margin-left: -5px; margin-top: -5px; }
+	
+   #page-footer table, #page-footer tr, #page-footer tbody, #page-footer td { display: block; width: 100%; margin: 0px; padding: 0px }
+   #page-footer td { margin-bottom: 20px; }
+}
+

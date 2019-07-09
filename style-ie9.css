@@ -1,0 +1,17 @@
+@media only screen and (max-width: 900px) {
+	/*Note these rules apply to the tablet site AND the mobile site*/
+	table#group-sittings , #group-sittings thead, #group-sittings tbody, 
+	#group-sittings th, #group-sittings td, #group-sittings  tr:not(.table-fix-dummy),
+	table.organizational-structure, .organizational-structure thead, .organizational-structure tbody, 
+	.organizational-structure th, .organizational-structure td, .organizational-structure  tr,
+	table.email-list, .email-list thead, .email-list tbody, 
+	.email-list th, .email-list td, .email-list  tr 
+		{ display: block; float: left;}
+		
+	#group-sittings td, .organizational-structure td,  .email-list td,
+	#group-sittings tr, .organizational-structure tr,  .email-list tr,
+    #recipes td, #recipes tr
+		{width: 98%; }
+					
+	#group-sittings th { display: none }
+}

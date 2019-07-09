@@ -1,0 +1,29 @@
+@media print {
+	body {  font-family: Arial, Helvetica, Sans-Serif; }
+
+	@page {  margin: 1.5cm;	}
+
+	h1 {  font-size: 26px;}
+	h2 {  text-align: center; }
+	h3 {  margin: 1em 0;  font-size: 18px;}
+
+	a {  text-decoration: none;  font-weight: bold;  color: black;}
+
+	#header-titles {	text-align: center;}
+	#header-site-name {	font-size: 1.8em; margin: 20px 0px 0px 0px;}
+	#header-site-description { font-size: 1em; font-weight: 400}
+		
+	#mobile-menu { display: none }
+	#page-footer, #main-sidebar, .header-nav-menu, #header-image-link
+		{ display: none; }
+
+	table { font-size: 11px;  border-spacing:0; border-collapse:collapse; }
+	th { border-bottom: solid 2px black; padding: 7px; }
+	td { vertical-align: top; padding: 5px 7px; border-top: solid 1px #ccc;}
+
+	.wp-caption { border: 1px solid #ddd;  padding-top: 4px;  margin: 10px;  text-align: center;	}
+	.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px;  margin: 0; }
+	.alignright { float: right; margin: 0px 0px 15px 15px;}
+	.aligncenter { margin: 15px auto; }
+	.alignleft { float: left; margin: 0px 15px 0px 15px;}
+}
