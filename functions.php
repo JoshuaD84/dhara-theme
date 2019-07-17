@@ -99,6 +99,8 @@ function is_content_restricted ( ) {
    //get the slug requested 
    $slug = $_SERVER [ 'REQUEST_URI' ];
 
+   $post_restricted = $page_restricted = NULL; // tgs 7/17/2019 - handle cases where ifs are not entered
+
    //First check if it's a page and restricted
    $page = get_page_by_path ( $slug );
 
