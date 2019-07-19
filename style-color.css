@@ -26,7 +26,7 @@ html,body { background: hsla(213, 60%, 94%, 1); }
 .header-nav-menu > ul > .current_page_ancestor:hover > a
 	{ background: initial; background-color: hsla(212, 59%, 41%, 1) !important; color: hsla(0, 100%, 100%, 1) }
 
-#page-footer { background-color: hsla(214, 59%, 82%, 1) }
+#fat-footer { background-color: hsla(214, 59%, 82%, 1) }
 #page-footer { color: hsla(240, 14%, 23%, 1) }
 #page-footer a:hover { color: hsla(240, 14%, 45%, 1) }
 #footer-copyright-and-sitemap { background-color: hsla(212, 59%, 74%, 1); }
