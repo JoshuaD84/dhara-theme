@@ -124,7 +124,7 @@ input:-webkit-autofill:focus { -webkit-box-shadow: 0 0 0 50px white inset; -webk
 #fat-footer { padding-bottom: 20px; padding-top: 20px }
 #footer-copyright-and-sitemap { padding-top: 5px; padding-bottom: 5px; text-align: center }
 #page-footer { font-size: 1.5em; }
-#page-footer table { width: 100%; table-layout: fixed; border: 0px; border-radius: 15px; overflow: hidden }
+#page-footer table { width: 100%; table-layout: fixed; border: 0px; overflow: hidden }
 #page-footer tr { border: 0px; }
 #page-footer td { vertical-align: top; width: 33%; border: 0px; padding: 5px 30px; text-align: center }
 #page-footer h2 { text-align: center; margin-bottom: 10px }
