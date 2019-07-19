@@ -116,11 +116,10 @@
       
       if( is_single() or is_category() or is_home() ) {
          $pages = wp_list_categories( array('hierarchical'=> '1', 'title_li' => '', 'depth' => '2', 'echo'=> false) );
-         
-         echo $before_title. "News" . $after_title."<ul>";
+         echo "News";
+         echo "<ul>";
          echo apply_filters( 'simple_section_page_list', $pages );
          echo "</ul>";
-         
          return true;
 
       } else if ( $parent_id == 0 || empty ( $parent_id ) ) {
