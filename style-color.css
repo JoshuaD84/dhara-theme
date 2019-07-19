@@ -1,6 +1,12 @@
 * { color: inherit }
 
 html,body { background: hsla(213, 60%, 94%, 1); }
+#search-login-bar-logged-in, #search-login-bar-logout-link 
+   { color: hsla(214, 59%, 22%, 1) }
+#search-login-bar-color { background-color: hsla(214, 59%, 82%, 1) }
+#search-login-bar-logged-in a:hover, #search-login-bar-logout-link a:hover { color: hsla(214, 59%, 42%, 1) }
+#search-login-bar #searchform, #search-login-bar #user_login, #search-login-bar #user_pass { border-color: hsla(214, 59%, 52%, 1) }
+
 #page-content-matting { background: hsla(213, 60%, 94%, 1); }
 .page-content { background-color: hsla(210, 33%, 99%, 1) }
 .page-content {  border-color: hsla(154, 27%, 76%, 1); color: hsla(240, 14%, 23%, 1) !important }

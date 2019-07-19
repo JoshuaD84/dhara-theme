@@ -29,11 +29,9 @@ html { overflow-y: scroll } /*Makes the scrollbar always visible, helpful in avo
 .constrained-to-mid { width:90%; margin-left: auto; margin-right: auto; }
 
 #search-login-bar-logged-in, #search-login-bar-logout-link 
-   { display: inline-block; white-space: nowrap; font-size: 1.7em; font-weight: bold; margin-top: 14px; color: hsla(214, 59%, 22%, 1) }
+   { display: inline-block; white-space: nowrap; font-size: 1.7em; font-weight: bold; margin-top: 14px; }
 #search-login-bar-logout-link { padding-left: 15px }
 #search-login-bar-logged-in a, #search-login-bar-logout-link a { text-decoration: underline }
-#search-login-bar-logged-in a:hover, #search-login-bar-logout-link a:hover { color: hsla(214, 59%, 42%, 1) }
-#search-login-bar-color { background-color: hsla(214, 59%, 82%, 1) }
 #search-login-bar { display: table; padding-bottom: 10px; padding-top: 5px}  
 #search-login-bar-row { display: table-row }  
 #search-login-bar #schedule-cell { display: table-cell; vertical-align: bottom; padding-left: 30px; padding-top: 5px }
@@ -49,7 +47,6 @@ html { overflow-y: scroll } /*Makes the scrollbar always visible, helpful in avo
 #search-login-bar #topbarsearchbox { border: 1px solid; border-radius: 5px; padding: 4px 5px; width: 169px }
 #search-login-bar #search-login-bar-search-cell { text-align: right; padding: 0px; vertical-align: bottom; display: table-cell; white-space: nowrap }
 #search-login-bar #wp-submit, #search-login-bar #searchsubmit, #search-login-bar #topbarsearchbox,
-#search-login-bar #searchform, #search-login-bar #user_login, #search-login-bar #user_pass { border-color: hsla(214, 59%, 52%, 1) }
 /* these next two lines trick webkit into not making auto-filled login boxes (top of page usually) yellow */
 input:-webkit-autofill { -webkit-box-shadow: 0 0 0 50px white inset; -webkit-text-fill-color: #333; }
 input:-webkit-autofill:focus { -webkit-box-shadow: 0 0 0 50px white inset; -webkit-text-fill-color: #333; } 
