@@ -121,7 +121,7 @@ input:-webkit-autofill:focus { -webkit-box-shadow: 0 0 0 50px white inset; -webk
 .primary-trail-link.next { float: right; text-align: right }
 .primary-trail-link.previous { float: left; text-align: left }
 
-#fat-footer { padding-bottom: 20px; padding-top: 20px }
+#fat-footer { padding-bottom: 5px; padding-top: 5px }
 #footer-copyright-and-sitemap { padding-top: 5px; padding-bottom: 5px; text-align: center }
 #page-footer { font-size: 1.5em; }
 #page-footer table { width: 100%; table-layout: fixed; border: 0px; overflow: hidden }
