@@ -3,9 +3,9 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
     <?php if ( is_content_restricted() && !is_user_logged_in() ) : ?>
-	  <title><?php bloginfo('name'); echo " " . get_theme_mod('dhamma_title_separator') . " Login Required" ?></title>
+	  <title> <?php echo "Login Required " . get_theme_mod('dhamma_title_separator') . " " . get_bloginfo('name'); ?></title>
     <?php else: ?>
-	  <title><?php bloginfo('name'); wp_title(get_theme_mod('dhamma_title_separator')); ?></title>
+	  <title><?php wp_title( get_theme_mod('dhamma_title_separator'), true, "right" ); bloginfo('name'); ?></title>
     <? endif; ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
