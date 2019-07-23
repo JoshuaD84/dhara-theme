@@ -100,7 +100,7 @@
          </span></a></li>
          <li>
             <?php if ( is_user_logged_in() ): ?>
-            <a href="<?php echo wp_logout_url( url_after_logout ( $wp ) ); ?>"><span>
+            <a href="<?php global $wp; echo wp_logout_url( url_after_logout ( $wp ) ); ?>"><span>
                <img alt="" src="<?php bloginfo('template_directory');?>/images/mobile-logout-icon.png"/><br />
                   Logout
             </span></a>
@@ -141,6 +141,7 @@
                   'value_username' => 'oldstudent',
                   'value_remember' => true,
                ); 
+               if ( !prefers_os_menu ( $wp ) ) $args [ 'redirect' ] = site_url ( "/os/" );
                wp_login_form( $args ); 
             ?> 
          <?php endif; ?>
