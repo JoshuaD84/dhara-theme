@@ -30,8 +30,8 @@
 					</ul>
 				</td>
 				<td>
-				<img alt="Zedi Bells above the Meditation Pagoda" src="/wp-content/uploads/news.png" />
-				<h2>Recent News</h2>
+                   <img alt="Zedi Bells above the Meditation Pagoda" src="/wp-content/uploads/news.png" />
+                   <h2>Recent News</h2>
 					<ul id="os-welcome-news-feed" class="old-student-home-list">
 						<?php
 							  $recent_posts = wp_get_recent_posts ( array ( 'numberposts' => '6', 'post_status' => 'publish' )  );

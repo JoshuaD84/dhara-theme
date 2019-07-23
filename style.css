@@ -172,7 +172,6 @@ hr {
 #front-page-table img { width: 100%; border: 2px solid; border-radius: 5px; display: block; margin: 0 auto }
 ul.old-student-home-list { margin-left: 0px }
 ul.old-student-home-list li { margin-bottom: 10px; list-style: none }
-ul#os-welcome-news-feed li { white-space: nowrap; text-overflow: ellipsis; overflow: hidden }
 
 /*the pages we grab from www.dhamma.org*/
 .www-pageSetup, .www-pageSetup *, .www-pageSetup > tbody > tr:nth-child(odd) , .pageSetup, .pageSetup *, .pageSetup tr:nth-child(odd)
