@@ -2,10 +2,10 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <?php if ( is_content_restricted() ) :  ?>
-	  <title><?php bloginfo('name'); echo " | Login Required" ?></title>
+    <?php if ( is_content_restricted() ) : ?>
+	  <title><?php bloginfo('name'); " " . get_theme_mod('dhamma_title_separator') . " Login Required" ?></title>
     <?php else: ?>
-	  <title><?php bloginfo('name'); wp_title("|"); ?></title>
+	  <title><?php bloginfo('name'); wp_title(get_theme_mod('dhamma_title_separator')); ?></title>
     <? endif; ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

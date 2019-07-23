@@ -265,6 +265,8 @@ function dhara_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('dhamma_news_menu_item_id', array('transport' => 'refresh' ));
 	$wp_customize->add_control('dhamma_news_menu_item_id', array('section' => 'dhara_customizer', 'label' => 'News Menu Item Post ID (For Current Page Menu Highlighting)', 'type' => 'text'));
 
+	$wp_customize->add_setting('dhamma_title_separator', array('transport' => 'refresh' ));
+	$wp_customize->add_control('dhamma_title_separator', array('section' => 'dhara_customizer', 'label' => 'Separator for Browser Title', 'type' => 'text'));
 }
 add_action( 'customize_register', 'dhara_customize_register' );
 
