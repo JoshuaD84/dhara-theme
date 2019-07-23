@@ -2,9 +2,15 @@
 @media only screen and (min-width: 5px ) { .constrained-to-mid { width: 85%; min-width: 280px; } } 
 
 /* First we deal with the width of the matting around the page content */
-@media only screen and (max-width: 1400px) { .constrained-to-mid { width: 90% } }
-@media only screen and (max-width: 1300px) { .constrained-to-mid { width: 95% } }
-@media only screen and (max-width: 1200px) { 
+@media only screen and (max-width: 1400px) { 
+   .constrained-to-mid { width: 90% }
+}
+
+@media only screen and (max-width: 1300px) { 
+   .constrained-to-mid { width: 95% }
+}
+
+@media only screen and (max-width: 1200px) {
    .constrained-to-mid { width: 100% }
    #header-titles, #search-login-bar { box-sizing: border-box; padding-left: 10px; padding-right: 10px; }
 }
@@ -107,7 +113,9 @@
 }
 
 /* Trustee List */
-@media only screen and (max-width: 800px) { .trust-list { width: 49%; } }
+@media only screen and (max-width: 800px) { 
+   .trust-list { width: 49%; }
+}
 
 /* What to bring / what not to bring tables */
 @media only screen and (max-width: 850px) {
