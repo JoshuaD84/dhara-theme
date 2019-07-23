@@ -2,8 +2,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <?php if ( is_content_restricted() ) : ?>
-	  <title><?php bloginfo('name'); " " . get_theme_mod('dhamma_title_separator') . " Login Required" ?></title>
+    <?php if ( is_content_restricted() && !is_user_logged_in() ) : ?>
+	  <title><?php bloginfo('name'); echo " " . get_theme_mod('dhamma_title_separator') . " Login Required" ?></title>
     <?php else: ?>
 	  <title><?php bloginfo('name'); wp_title(get_theme_mod('dhamma_title_separator')); ?></title>
     <? endif; ?>
