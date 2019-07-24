@@ -44,17 +44,17 @@
 }
 
 /* Now we deal with the nav menu width */
-@media only screen and (min-width: 601px) and (max-width: 1050px) {
+@media only screen and (min-width: 601px) and (max-width: 1075px) {
    .header-nav-menu > ul > li > a { padding-left: 10px; padding-right: 10px; } 
 }
 
-@media only screen and (min-width: 601px) and (max-width: 930px) {
+@media only screen and (min-width: 601px) and (max-width: 970px) {
    /* TODO: Fix these up to get good menus */
    .header-nav-menu a { font-size: .85em } 
 }
 
 @media only screen and (min-width: 601px) and (max-width: 850px) {
-   .header-nav-menu > ul > li > a { height: 32px }
+   .header-nav-menu > ul > li > a { height: 46px }
 }
 
 /* Top login / search / schedule bar */
