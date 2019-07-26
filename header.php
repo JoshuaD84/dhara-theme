@@ -160,15 +160,21 @@
                $sub_menu_accessible = is_os_page ( $wp ) || is_user_logged_in();
                $sub_menu_class = $sub_menu_accessible ? 'menu-item-has-children' : '';
 
-               $wrap_code_pre = '<ul id="%1$s" class="%2$s">%3$s<li class="' . $sub_menu_class . '">';
-               $wrap_code_post = '</li></ul>';
 
                if( is_os_page ( $wp ) ) {
+                  $wrap_code_pre = '<ul id="%1$s" class="%2$s"><li class="' . $sub_menu_class . '">';
+                  $wrap_code_post = '</li>%3$s</ul>';
+                  /*
+                  $wrap_code_pre = '<ul id="%1$s" class="%2$s">%3$s<li class="' . $sub_menu_class . '">';
+                  $wrap_code_post = '</li></ul>';
+                  */
                   $sub_menu_label = "ns-menu";
                   $menu_label = "os-menu";
                   $sub_menu_link = '<a href="/">New Students</a>';
                   
                } else {
+                  $wrap_code_pre = '<ul id="%1$s" class="%2$s">%3$s<li class="' . $sub_menu_class . '">';
+                  $wrap_code_post = '</li></ul>';
                   $sub_menu_label = "os-menu";
                   $menu_label = "ns-menu";
                   $sub_menu_link = '<a href="/os/">Old Students</a>';
@@ -185,13 +191,24 @@
                   $sub_menu = '';
                }
 
-               wp_nav_menu ( array (
-                  'echo'            => true,
-                  'theme_location'  => $menu_label,
-                  'items_wrap'      => $wrap_code_pre . $sub_menu_link . $sub_menu . $wrap_code_post,
-                  'container_class' => 'header-nav-menu',
-                  'menu_class'      => "nav",
-               ));
+               if( is_os_page ( $wp ) ) {
+                  wp_nav_menu ( array (
+                     'echo'            => true,
+                     'theme_location'  => $menu_label,
+                     'items_wrap'      => $wrap_code_pre . $sub_menu_link . $sub_menu . $wrap_code_post,
+                     'container_class' => 'header-nav-menu',
+                     'menu_class'      => "nav",
+                  ));
+
+               } else {
+                  wp_nav_menu ( array (
+                     'echo'            => true,
+                     'theme_location'  => $menu_label,
+                     'items_wrap'      => $wrap_code_pre . $sub_menu_link . $sub_menu . $wrap_code_post,
+                     'container_class' => 'header-nav-menu',
+                     'menu_class'      => "nav",
+                  ));
+               }
             ?>
          </div>
       </div>	
