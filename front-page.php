@@ -4,18 +4,18 @@
       <table>
          <tr>
             <td>
-               <a href="/about-vipassana/vipassana/"><img alt="A Bell to Signal Group Sittings and Meals." src="/wp-content/uploads/home2-768x511.jpg" /></a>
-               <h2><a href="/about-vipassana/vipassana/">Introduction to Vipassana</a></h2>
+               <a href="/about/vipassana/"><img alt="A Bell to Signal Group Sittings and Meals." src="/wp-content/uploads/home2-768x511.jpg" /></a>
+               <h2><a href="/about/vipassana/">Introduction to Vipassana</a></h2>
                <p>Vipassana is one of India's oldest techniques of meditation, first taught 2,500 years ago. It is a practical method of self-awareness that allows one to face the tensions and problems of daily life in a calm and balanced way.</p>
             </td>
             <td>
-               <a href="/what-to-expect/"><img alt="The Meditation Hall" src="/wp-content/uploads/home3-768x511.jpg"/></a>
-               <h2><a href="/what-to-expect/">What to Expect on a Course</a></h2>
+               <a href="/courses/what-to-expect/"><img alt="The Meditation Hall" src="/wp-content/uploads/home3-768x511.jpg"/></a>
+               <h2><a href="/courses/what-to-expect/">What to Expect on a Course</a></h2>
                <p>To learn Vipassana Meditation one needs to develop one's own experience during a residential ten day course. Courses are held throughout the year at the Center and are conducted in English, with accommodations for non-english speaking students available on most courses.</p>
             </td>
             <td>
-               <a href="/course-information/how-to-apply/"><img alt="Zedi Bells above the Meditation Pagoda" src="/wp-content/uploads/home5-768x511.jpg" /></a>
-               <h2><a href="/course-information/how-to-apply/">How to Apply for a Course</a></h2>
+               <a href="/courses/how-to-apply/"><img alt="Zedi Bells above the Meditation Pagoda" src="/wp-content/uploads/home5-768x511.jpg" /></a>
+               <h2><a href="/courses/how-to-apply/">How to Apply for a Course</a></h2>
                <p>Find out about the prerequisites and how to apply for a Vipassana course in Massachusetts, USA.</p>
             </td>
          </tr>
