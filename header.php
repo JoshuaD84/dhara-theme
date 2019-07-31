@@ -6,7 +6,7 @@
 	  <title> <?php echo "Login Required " . get_theme_mod('dhamma_title_separator') . " " . get_bloginfo('name'); ?></title>
     <?php else: ?>
 	  <title><?php wp_title( get_theme_mod('dhamma_title_separator'), true, "right" ); bloginfo('name'); ?></title>
-    <? endif; ?>
+    <?php endif; ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
