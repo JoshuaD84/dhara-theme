@@ -193,7 +193,7 @@ ul.old-student-home-list li { margin-bottom: 10px; list-style: none }
 #group-sittings .group-sittings-see-also { text-align: center; } 
 
 #trust-schedule { margin: 0px auto }
-#trust-schedule td:nth-child(2) { text-align: center }
+#trust-schedule td:nth-child(2) { text-align: center; width: 30% }
 
 #recipes { margin: 0px auto; width: 95%; table-layout: fixed }
 #recipes td { line-height: 180% }

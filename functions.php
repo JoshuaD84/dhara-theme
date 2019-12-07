@@ -49,7 +49,7 @@ function local_news_feed ( $name, $categoryID ) {
 	  echo '<ul class="local-page-news-items">';
 	  foreach ( $recent_posts as $recent ) {
 		 echo '<li class="home-page-news-item">';
-		 echo '<strong>' . get_the_time ( get_option ( 'date_format' ), $recent [ "ID" ] ) . '</strong>: <a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"].'</a>';
+		 echo '<a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"].'</a>';
 		 echo '</li>';
 	  }
 	  echo '</ul>';
