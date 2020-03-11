@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <div id="home-page-content" class="page-content">
+    <div id="coronavirus-front-page">
+      <a href="https://www.dhara.dhamma.org/announcement-regarding-the-coronavirus-covid-19/">Important Announcement Regarding the "Coronavirus (COVID-19)"</a>
+    </div>
 	<div id="front-page-table">
       <table>
          <tr>

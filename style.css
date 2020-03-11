@@ -252,3 +252,5 @@ h3.archive { margin: 0px 0px 2px 0px; padding: 0px;}
 .google-calendar { border: 1px solid black; width: 99%; height: 600px }
 
 .hidden-search-keywords { display: none }
+
+#coronavirus-front-page { text-align: center; font-size: 32px; padding-top: 40px; padding-bottom: 10px; }
