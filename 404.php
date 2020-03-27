@@ -1,12 +1,17 @@
 <?php get_header(); ?>
 <div id="page-<?php echo get_the_ID();?>-content" class="page-content">
    <?php if ( is_content_restricted() ) :  ?>
-      <h1>You must login to see this page.</h1>
-      <p>The Old Student website contains information regarding group-sittings with other meditators in your area, old-student courses, dhamma service, dāna, and center development. Please feel free to <a href="mailto:webmaster@dhara.dhamma.org">email the webmaster</a> or <a href="/contact/">contact us</a> if you’re an old student and have forgotten the login information.</p>
+      <?php if ( wp_get_current_user()->ID == 6 ) : ?> 
+         <h1>This Page is for Dhamma Workers Only</h1>
+         <!--If we're logged in as old student and the content is still restricted-->
+         <p>This page is only available to dhamma workers and/or trustees, so those students can provide dhamma service to other students. If you are a dhamma worker and require access to this page, please email the <a href="mailto:webmaster@dhara.dhamma.org">webmaster</a> to receive the appropriate login information.</p>
+      <?php else: ?>
+         <h1>You must login to see this page.</h1>
+         <p>The Old Student website contains information regarding group-sittings with other meditators in your area, old-student courses, dhamma service, dāna, and center development. Please feel free to <a href="mailto:webmaster@dhara.dhamma.org">email the webmaster</a> or <a href="/contact/">contact us</a> if you’re an old student and have forgotten the login information.</p>
 
-      <p>If you haven't yet attended a ten-day course in this tradition, please view <a href="/">our home page</a> or the <a target="_blank" href="https://www.dhamma.org/">International Vipassana page</a> for more information on sitting a ten-day course.
-      </p>
-
+         <p>If you haven't yet attended a ten-day course in this tradition, please view <a href="/">our home page</a> or the <a target="_blank" href="https://www.dhamma.org/">International Vipassana page</a> for more information on sitting a ten-day course.
+         </p>
+      <?php endif; ?>
       <div id="login-section-404">
          <h2>Login</h2>
          <?php wp_login_form () ?>
