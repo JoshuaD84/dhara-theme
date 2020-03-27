@@ -43,36 +43,36 @@
 <?php wp_head(); ?>
 </head>
 <body>
-<a href="http://dhara.dhamma.org/os/">&lsaquo; Return to dhara.dhamma.org</a>
 <div id="intro-text">
+<a href="http://dhara.dhamma.org/os/">&lsaquo;- return to dhara.dhamma.org</a>
    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php the_content(__('(more...)')); ?>
    <?php endwhile; endif; ?>
 </div>
 <div id="audio-controls">
 <audio controls id="audio-one" class="audio">
-   <source src="audio/virtual-group-sitting-audio-1.mp3" type="audio/mpeg">
+   <source src="/filebase/virtual-group-sittings/audio-1.mp3" type="audio/mpeg">
 </audio>
 <audio controls id="audio-two" class="audio">
-   <source src="audio/virtual-group-sitting-audio-2.mp3" type="audio/mpeg">
+   <source src="/filebase/virtual-group-sittings/audio-2.mp3" type="audio/mpeg">
 </audio>
 <audio controls id="audio-three" class="audio">
-   <source src="audio/virtual-group-sitting-audio-3.mp3" type="audio/mpeg">
+   <source src="/filebase/virtual-group-sittings/audio-3.mp3" type="audio/mpeg">
 </audio>
 <audio controls id="audio-four" class="audio">
-   <source src="audio/virtual-group-sitting-audio-4.mp3" type="audio/mpeg">
+   <source src="/filebase/virtual-group-sittings/audio-4.mp3" type="audio/mpeg">
 </audio>
 <audio controls id="audio-five" class="audio">
-   <source src="audio/virtual-group-sitting-audio-5.mp3" type="audio/mpeg">
+   <source src="/filebase/virtual-group-sittings/audio-5.mp3" type="audio/mpeg">
 </audio>
 <div id="chooser">
    <label for="session-chooser">Change Audio Session:</label>
    <select id="session-chooser">
-      <option value="one">One</option>
-      <option value="two">Two</option>
-      <option value="three">Three</option>
-      <option value="four">Four</option>
-      <option value="five">Five</option>
+      <option>1 - Dhamma Khetta Short</option>
+      <option>2 - Dhamma Giri Minimal Instructions</option>
+      <option>3 - Dhamma Salila Long Instructions</option>
+      <option>4 - Dhamma Salila Short Instructions</option>
+      <option>5 - Dhamma Setu Long Instructions</option>
    </select>
 </div>
 </div>

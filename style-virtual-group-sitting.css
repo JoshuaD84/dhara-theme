@@ -27,8 +27,9 @@ a:hover {
 
 #intro-text {
    text-align: left;
-   width: 60%;
    min-width: 400px;
+   max-width: 1000px;
+   width: 80%;
 }
 
 #chooser {
