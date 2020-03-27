@@ -4,6 +4,18 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style-virtual-group-sitting.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/JavaScript">
+   function toggleTextHide() {
+      if(document.getElementById("intro-text").style.display == "none") {
+        document.getElementById("intro-text").style.display = "block";
+        document.getElementById("toggle-text-button").innerHTML = "hide text";
+        document.getElementById("audio-controls").style.opacity = "1";
+      } else {
+        document.getElementById("intro-text").style.display = "none";
+        document.getElementById("toggle-text-button").innerHTML = "show text";
+        document.getElementById("audio-controls").style.opacity = ".5";
+      }
+   }
+
    function changeAudioPlayerTo(playerIndex) {
       document.getElementById( "audio-one").style.display = "none";
       document.getElementById( "audio-two").style.display = "none";
@@ -74,6 +86,7 @@
       <option>4 - Dhamma Salila Short Instructions</option>
       <option>5 - Dhamma Setu Long Instructions</option>
    </select>
+   <button id="toggle-text-button" type="button" onclick="toggleTextHide()">Hide Text</button> 
 </div>
 </div>
 </body>
