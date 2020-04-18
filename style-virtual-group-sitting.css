@@ -4,7 +4,8 @@ html {
 }
 
 body {
-   background-image: url('./images/vgs-background.png');
+   background-color: black;
+   background-image: url('/filebase/virtual-group-sittings/backgrounds/1.png');
    height: calc(100% - 1em);
    background-position: center;
    background-repeat: no-repeat;
