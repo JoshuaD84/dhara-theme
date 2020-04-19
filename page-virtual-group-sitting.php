@@ -17,18 +17,16 @@
    }
 
    function changeAudioPlayerTo(playerIndex) {
-      document.getElementById( "audio-one").style.display = "none";
-      document.getElementById( "audio-two").style.display = "none";
-      document.getElementById( "audio-three").style.display = "none";
-      document.getElementById( "audio-four").style.display = "none";
-      document.getElementById( "audio-five").style.display = "none";
-      document.getElementById( "audio-six").style.display = "none";
-      document.getElementById( "audio-one").pause();
-      document.getElementById( "audio-two").pause();
-      document.getElementById( "audio-three").pause();
-      document.getElementById( "audio-four").pause();
-      document.getElementById( "audio-five").pause();
-      document.getElementById( "audio-six").pause();
+      document.getElementById("audio-one").style.display = "none";
+      document.getElementById("audio-two").style.display = "none";
+      document.getElementById("audio-three").style.display = "none";
+      document.getElementById("audio-four").style.display = "none";
+      document.getElementById("audio-five").style.display = "none";
+      document.getElementById("audio-one").pause();
+      document.getElementById("audio-two").pause();
+      document.getElementById("audio-three").pause();
+      document.getElementById("audio-four").pause();
+      document.getElementById("audio-five").pause();
 
       switch (playerIndex) {
          case 0:
@@ -45,9 +43,6 @@
             break;
          case 4:
             document.getElementById( "audio-five").style.display = "block";
-            break;
-         case 5:
-            document.getElementById( "audio-six").style.display = "block";
             break;
       }
    }
@@ -95,43 +90,43 @@
    <?php endwhile; endif; ?>
 </div>
 <div id="audio-controls">
-<audio controls id="audio-one" class="audio">
-   <source src="/filebase/virtual-group-sittings/audio-1.mp3" type="audio/mpeg">
-</audio>
-<audio controls id="audio-two" class="audio">
-   <source src="/filebase/virtual-group-sittings/audio-2.mp3" type="audio/mpeg">
-</audio>
-<audio controls id="audio-three" class="audio">
-   <source src="/filebase/virtual-group-sittings/audio-3.mp3" type="audio/mpeg">
-</audio>
-<audio controls id="audio-four" class="audio">
-   <source src="/filebase/virtual-group-sittings/audio-4.mp3" type="audio/mpeg">
-</audio>
-<audio controls id="audio-five" class="audio">
-   <source src="/filebase/virtual-group-sittings/audio-5.mp3" type="audio/mpeg">
-</audio>
-<div id="chooser">
-   <label for="session-chooser">Audio Session:</label>
-   <select id="session-chooser">
-      <option>1 - Dhamma Khetta Short</option>
-      <option>2 - Dhamma Giri Minimal Instructions</option>
-      <option>3 - Dhamma Salila Short Instructions</option>
-      <option>4 - Dhamma Setu Long Instructions</option>
-      <option>5 - Dhamma Sikhara Short Instructions</option>
-   </select>
-   <button id="toggle-text-button" type="button" onclick="toggleTextHide()">Hide Text</button> 
-   <br />
-   <br />
-   <label for="background-chooser">Background:</label>
-   <select id="background-chooser">
-      <option>1 - Dharā Arial</option>
-      <option>2 - Dharā Tree</option>
-      <option>3 - Dharā Gong</option>
-      <option>4 - Patapa Lotus</option>
-      <option>5 - Patapa Sign</option>
-      <option>6 - Patapa Dhamma Hall</option>
-   </select>
-</div>
+   <audio controls id="audio-one" class="audio">
+      <source src="/filebase/virtual-group-sittings/audio-1.mp3" type="audio/mpeg">
+   </audio>
+   <audio controls id="audio-two" class="audio">
+      <source src="/filebase/virtual-group-sittings/audio-2.mp3" type="audio/mpeg">
+   </audio>
+   <audio controls id="audio-three" class="audio">
+      <source src="/filebase/virtual-group-sittings/audio-3.mp3" type="audio/mpeg">
+   </audio>
+   <audio controls id="audio-four" class="audio">
+      <source src="/filebase/virtual-group-sittings/audio-4.mp3" type="audio/mpeg">
+   </audio>
+   <audio controls id="audio-five" class="audio">
+      <source src="/filebase/virtual-group-sittings/audio-5.mp3" type="audio/mpeg">
+   </audio>
+   <div id="chooser">
+      <label for="session-chooser">Audio Session:</label>
+      <select id="session-chooser">
+         <option>1 - Dhamma Khetta Short</option>
+         <option>2 - Dhamma Giri Minimal Instructions</option>
+         <option>3 - Dhamma Salila Short Instructions</option>
+         <option>4 - Dhamma Setu Long Instructions</option>
+         <option>5 - Dhamma Sikhara Short Instructions</option>
+      </select>
+      <button id="toggle-text-button" type="button" onclick="toggleTextHide()">Hide Text</button> 
+      <br />
+      <br />
+      <label for="background-chooser">Background:</label>
+      <select id="background-chooser">
+         <option>1 - Dharā Arial</option>
+         <option>2 - Dharā Tree</option>
+         <option>3 - Dharā Gong</option>
+         <option>4 - Patapa Lotus</option>
+         <option>5 - Patapa Sign</option>
+         <option>6 - Patapa Dhamma Hall</option>
+      </select>
+   </div>
 </div>
 </body>
 </html>
