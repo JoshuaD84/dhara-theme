@@ -73,6 +73,12 @@
          case 5:
             imageFileName = "6.jpg";
             break;
+         case 6:
+            imageFileName = "7.jpg";
+            break;
+         case 7:
+            imageFileName = "8.jpg";
+            break;
       }
       document.getElementById( "vgs-body").style.backgroundImage = "url('/filebase/virtual-group-sittings/backgrounds/" + imageFileName + "')";
    }
@@ -134,6 +140,8 @@
          <option>4 - Patapa Lotus</option>
          <option>5 - Patapa Sign</option>
          <option>6 - Patapa Dhamma Hall</option>
+         <option>7 - Pubannanda Day</option>
+         <option>8 - Pubannanda Night</option>
       </select>
    </div>
 </div>
