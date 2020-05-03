@@ -1,12 +1,11 @@
 html {
    height: 100%;
-   min-height: 700;
 }
 
 body {
    background-color: black;
    background-image: url('/filebase/virtual-group-sittings/backgrounds/1.png');
-   height: calc(100% - 1em);
+   height: calc(100% - 2em);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -31,17 +30,27 @@ a:hover {
    text-align: left;
    min-width: 400px;
    max-width: 1000px;
-   width: 80%;
+   background: rgba(20,20,20,0.65);
+   padding: 10px 30px 20px 30px;
+   border-radius: 50px;
+   width: 100%;
+   box-sizing: border-box;
 }
 
-#chooser {
+#control-choosers {
    margin: auto;
    text-align: center;
-   margin-top: 30px;
+   margin-top: 10px;
 }
 
 #session-chooser {
    min-width: 150px;
+}
+
+#session-chooser, #background-chooser {
+   margin-right: 15px;
+   margin-top: 0px;
+   padding-top: 0px;
 }
 
 #audio-controls {
@@ -50,7 +59,7 @@ a:hover {
    left: 0%;
    width: 100%;
    background-color: rgba(70,70,70,0.6);
-   padding: 25px 0px;
+   padding: 15px 0px;
    margin: 0px;
    margin: 0px;
 }
