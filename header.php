@@ -127,7 +127,7 @@
       </div>
       <div id="mobile-login">
          <?php if ( !is_user_logged_in() ): ?>
-            <div id="mobile-login-forgot-info">Please feel free to <a href="mailto:webmaster@dhara.dhamma.org">email the webmaster</a> if you’re an old student and have forgotten the login information.</div>
+            <div id="mobile-login-forgot-info">Please feel free to <a href="mailto:info@dhara.dhamma.org">email us</a> if you’re an old student and have forgotten the login information.</div>
             <?php 
                $args = array(
                   'echo' => true,

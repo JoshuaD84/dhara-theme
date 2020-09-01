@@ -26,6 +26,7 @@
       document.getElementById("audio-seven").style.display = "none";
       document.getElementById("audio-eight").style.display = "none";
       document.getElementById("audio-nine").style.display = "none";
+      document.getElementById("audio-ten").style.display = "none";
       document.getElementById("audio-one").pause();
       document.getElementById("audio-two").pause();
       document.getElementById("audio-three").pause();
@@ -35,6 +36,7 @@
       document.getElementById("audio-seven").pause();
       document.getElementById("audio-eight").pause();
       document.getElementById("audio-nine").pause();
+      document.getElementById("audio-ten").pause();
 
       switch (playerIndex) {
          case 0:
@@ -63,6 +65,9 @@
             break;
          case 8:
             document.getElementById( "audio-nine").style.display = "block";
+            break;
+         case 9:
+            document.getElementById( "audio-ten").style.display = "block";
             break;
       }
    }
@@ -93,6 +98,12 @@
             break;
          case 7:
             imageFileName = "8.jpg";
+            break;
+         case 8:
+            imageFileName = "9.jpg";
+            break;
+         case 9:
+            imageFileName = "10.jpg";
             break;
       }
       document.getElementById( "vgs-body").style.backgroundImage = "url('/filebase/virtual-group-sittings/backgrounds/" + imageFileName + "')";
@@ -139,24 +150,28 @@
          <source src="/filebase/virtual-group-sittings/salila-short.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-eight" class="audio">
-         <source src="/filebase/virtual-group-sittings/day-ten-short.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/giri-long.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-nine" class="audio">
-         <source src="/filebase/virtual-group-sittings/giri-long.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/kaya-short.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls id="audio-ten" class="audio">
+         <source src="/filebase/virtual-group-sittings/day-ten-short.mp3" type="audio/mpeg">
       </audio>
    </div>
    <div id="control-choosers">
       <label for="session-chooser">Audio Session:</label>
       <select id="session-chooser">
-         <option>1 - Khetta Short Instructions</option>
-         <option>2 - Sikhara Short Instructions</option>
-         <option>3 - Setu Long Instructions</option>
-         <option>4 - Dubai Long Instructions</option>
-         <option>5 - Juhu Mumbai Short Instructions</option>
-         <option>6 - Salila Long Instructions</option>
-         <option>7 - Salila Short Instructions</option>
-         <option>8 - Day Ten Short Instructions</option>
-         <option>9 - Giri Long Instructions</option>
+         <option>1 - Khetta Short</option>
+         <option>2 - Sikhara Short</option>
+         <option>3 - Setu Long</option>
+         <option>4 - Dubai Long</option>
+         <option>5 - Juhu Mumbai Short</option>
+         <option>6 - Salila Long</option>
+         <option>7 - Salila Short</option>
+         <option>8 - Giri Long</option>
+         <option>9 - Kaya [Hindi/Eng]</option>
+         <option>10 - Day Ten Short</option>
       </select>
       <label for="background-chooser">Background:</label>
       <select id="background-chooser">
@@ -168,6 +183,8 @@
          <option>6 - Patapa Dhamma Hall</option>
          <option>7 - Pubannanda Day</option>
          <option>8 - Pubannanda Night</option>
+         <option>9 - Pakasa Pond</option>
+         <option>10 - Pakasa Gong</option>
       </select>
       <button id="toggle-text-button" type="button" onclick="toggleTextHide()">Hide Text</button> 
    </div>
