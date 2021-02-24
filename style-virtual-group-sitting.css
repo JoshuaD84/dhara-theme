@@ -10,7 +10,7 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    color: white;
-   font-size: 1.2em;
+   font-size: 16px;
 }
 
 h1 {
@@ -29,7 +29,6 @@ a:hover {
    display: block;
    text-align: left;
    min-width: 400px;
-   max-width: 1000px;
    background: rgba(20,20,20,0.65);
    padding: 10px 30px 20px 30px;
    border-radius: 50px;

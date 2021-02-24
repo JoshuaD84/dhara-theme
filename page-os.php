@@ -4,7 +4,7 @@
 		<table>
 			<tr>
 				<td>
-					<img alt="The Meditation Hall" src="/wp-content/uploads/your-practice.jpg" />
+					<img alt="The Meditation Hall" src="/wp-content/uploads/your-practice-1.jpg" />
 					<h2>Your Practice</h2>
 					<ul class="old-student-home-list">
 						<li><a href="/os/regions/group-sittings/">Find Local Group Sittings</a></li>
@@ -17,7 +17,7 @@
 					</ul>
 				</td>
 				<td>
-					<img alt="Dhamma Servers" src="/wp-content/uploads/dhamma-service.png" />
+					<img alt="Dhamma Servers" src="/wp-content/uploads/dhamma-service.jpg" />
 					<h2>Dhamma Service</h2>
 					<ul class="old-student-home-list">
 						<li><a href="/os/dhamma-service/overview/">Overview</a></li>
@@ -30,7 +30,7 @@
 					</ul>
 				</td>
 				<td>
-                   <img alt="Zedi Bells above the Meditation Pagoda" src="/wp-content/uploads/news.png" />
+                   <img alt="Zedi Bells above the Meditation Pagoda" src="/wp-content/uploads/news.jpg" />
                    <h2>Recent News</h2>
 					<ul id="os-welcome-news-feed" class="old-student-home-list">
 						<?php

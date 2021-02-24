@@ -27,6 +27,8 @@
       document.getElementById("audio-eight").style.display = "none";
       document.getElementById("audio-nine").style.display = "none";
       document.getElementById("audio-ten").style.display = "none";
+      document.getElementById("audio-eleven").style.display = "none";
+      document.getElementById("audio-twelve").style.display = "none";
       document.getElementById("audio-one").pause();
       document.getElementById("audio-two").pause();
       document.getElementById("audio-three").pause();
@@ -37,37 +39,45 @@
       document.getElementById("audio-eight").pause();
       document.getElementById("audio-nine").pause();
       document.getElementById("audio-ten").pause();
+      document.getElementById("audio-eleven").pause();
+      document.getElementById("audio-twelve").pause();
 
       switch (playerIndex) {
          case 0:
-            document.getElementById( "audio-one").style.display = "block";
+            document.getElementById("audio-one").style.display = "block";
             break;
          case 1:
-            document.getElementById( "audio-two").style.display = "block";
+            document.getElementById("audio-two").style.display = "block";
             break;
          case 2:
-            document.getElementById( "audio-three").style.display = "block";
+            document.getElementById("audio-three").style.display = "block";
             break;
          case 3:
-            document.getElementById( "audio-four").style.display = "block";
+            document.getElementById("audio-four").style.display = "block";
             break;
          case 4:
-            document.getElementById( "audio-five").style.display = "block";
+            document.getElementById("audio-five").style.display = "block";
             break;
          case 5:
-            document.getElementById( "audio-six").style.display = "block";
+            document.getElementById("audio-six").style.display = "block";
             break;
          case 6:
-            document.getElementById( "audio-seven").style.display = "block";
+            document.getElementById("audio-seven").style.display = "block";
             break;
          case 7:
-            document.getElementById( "audio-eight").style.display = "block";
+            document.getElementById("audio-eight").style.display = "block";
             break;
          case 8:
-            document.getElementById( "audio-nine").style.display = "block";
+            document.getElementById("audio-nine").style.display = "block";
             break;
          case 9:
-            document.getElementById( "audio-ten").style.display = "block";
+            document.getElementById("audio-ten").style.display = "block";
+            break;
+         case 10:
+            document.getElementById("audio-eleven").style.display = "block";
+            break;
+         case 11:
+            document.getElementById("audio-twelve").style.display = "block";
             break;
       }
    }
@@ -135,28 +145,34 @@
          <source src="/filebase/virtual-group-sittings/sikhara-short.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-three" class="audio">
-         <source src="/filebase/virtual-group-sittings/setu-long.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/sikhara-long.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-four" class="audio">
-         <source src="/filebase/virtual-group-sittings/dubai-long.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/setu-long.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-five" class="audio">
-         <source src="/filebase/virtual-group-sittings/juhu-mumbai-short.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/dubai-long.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-six" class="audio">
-         <source src="/filebase/virtual-group-sittings/salila-long.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/juhu-mumbai-short.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-seven" class="audio">
-         <source src="/filebase/virtual-group-sittings/salila-short.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/salila-long.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-eight" class="audio">
-         <source src="/filebase/virtual-group-sittings/giri-long.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/salila-short.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-nine" class="audio">
-         <source src="/filebase/virtual-group-sittings/kaya-short.mp3" type="audio/mpeg">
+         <source src="/filebase/virtual-group-sittings/giri-long.mp3" type="audio/mpeg">
       </audio>
       <audio controls id="audio-ten" class="audio">
+         <source src="/filebase/virtual-group-sittings/via-long-hindi-eng.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls id="audio-eleven" class="audio">
          <source src="/filebase/virtual-group-sittings/day-ten-short.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls id="audio-twelve" class="audio">
+         <source src="/filebase/virtual-group-sittings/kaya-short.mp3" type="audio/mpeg">
       </audio>
    </div>
    <div id="control-choosers">
@@ -164,14 +180,16 @@
       <select id="session-chooser">
          <option>1 - Khetta Short</option>
          <option>2 - Sikhara Short</option>
-         <option>3 - Setu Long</option>
-         <option>4 - Dubai Long</option>
-         <option>5 - Juhu Mumbai Short</option>
-         <option>6 - Salila Long</option>
-         <option>7 - Salila Short</option>
-         <option>8 - Giri Long</option>
-         <option>9 - Kaya [Hindi/Eng]</option>
-         <option>10 - Day Ten Short</option>
+         <option>3 - Sikhara Long</option>
+         <option>4 - Setu Long</option>
+         <option>5 - Dubai Long [Hindi/Eng]</option>
+         <option>6 - Juhu Mumbai Short</option>
+         <option>7 - Salila Long</option>
+         <option>8 - Salila Short</option>
+         <option>9 - Giri Long</option>
+         <option>10 - VIA Long [Hindi/Eng]</option>
+         <option>11 - Day Ten Short</option>
+         <option>12 - Kaya</option>
       </select>
       <label for="background-chooser">Background:</label>
       <select id="background-chooser">
